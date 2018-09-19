@@ -11,7 +11,7 @@ public class Sort10Numbers {
         Scanner sc = new Scanner(System.in);
         for(int c = 0; c<10;  ){
             System.out.println("Введите число под номером =" + (c + 1));
-            if (!sc.hasNextInt() ) {
+            if (!sc.hasNextInt()) {
                 System.out.println("Вы ввели не число!");
                 sc.next();
             }
