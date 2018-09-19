@@ -9,9 +9,16 @@ public class Sort10Numbers {
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Введите число под номером =" + (i + 1));
-            nums.add(sc.nextInt());
+        for(int c = 0; c<10;  ){
+            System.out.println("Введите число под номером =" + (c + 1));
+            if (!sc.hasNextInt() ) {
+                System.out.println("Вы ввели не число!");
+                sc.next();
+            }
+            else {
+                nums.add(sc.nextInt());
+                c++;
+            }
         }
         /*
         Collections.sort(nums);
